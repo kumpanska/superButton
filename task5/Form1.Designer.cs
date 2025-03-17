@@ -32,6 +32,9 @@
             this.ColorBackgroundBtn = new System.Windows.Forms.Button();
             this.MessageBtn = new System.Windows.Forms.Button();
             this.btnSetOfActions = new System.Windows.Forms.Button();
+            this.OpacityCheckBox = new System.Windows.Forms.CheckBox();
+            this.ColorBackgroundCheckBox = new System.Windows.Forms.CheckBox();
+            this.MessageCheckBox = new System.Windows.Forms.CheckBox();
             this.SuspendLayout();
             // 
             // OpacityBtn
@@ -74,11 +77,47 @@
             this.btnSetOfActions.UseVisualStyleBackColor = true;
             this.btnSetOfActions.Click += new System.EventHandler(this.btnSetOfActions_Click);
             // 
+            // OpacityCheckBox
+            // 
+            this.OpacityCheckBox.AutoSize = true;
+            this.OpacityCheckBox.Location = new System.Drawing.Point(0, 76);
+            this.OpacityCheckBox.Name = "OpacityCheckBox";
+            this.OpacityCheckBox.Size = new System.Drawing.Size(246, 17);
+            this.OpacityCheckBox.TabIndex = 4;
+            this.OpacityCheckBox.Text = "\"супермегакнопка\" поглинає \"Прозорість\"";
+            this.OpacityCheckBox.UseVisualStyleBackColor = true;
+            this.OpacityCheckBox.CheckedChanged += new System.EventHandler(this.OpacityCheckBox_CheckedChanged);
+            // 
+            // ColorBackgroundCheckBox
+            // 
+            this.ColorBackgroundCheckBox.AutoSize = true;
+            this.ColorBackgroundCheckBox.Location = new System.Drawing.Point(0, 99);
+            this.ColorBackgroundCheckBox.Name = "ColorBackgroundCheckBox";
+            this.ColorBackgroundCheckBox.Size = new System.Drawing.Size(236, 17);
+            this.ColorBackgroundCheckBox.TabIndex = 5;
+            this.ColorBackgroundCheckBox.Text = "\"супермегакнопка\" поглинає \"Колір тла\"";
+            this.ColorBackgroundCheckBox.UseVisualStyleBackColor = true;
+            this.ColorBackgroundCheckBox.CheckedChanged += new System.EventHandler(this.ColorBackgroundCheckBox_CheckedChanged);
+            // 
+            // MessageCheckBox
+            // 
+            this.MessageCheckBox.AutoSize = true;
+            this.MessageCheckBox.Location = new System.Drawing.Point(0, 122);
+            this.MessageCheckBox.Name = "MessageCheckBox";
+            this.MessageCheckBox.Size = new System.Drawing.Size(244, 17);
+            this.MessageCheckBox.TabIndex = 6;
+            this.MessageCheckBox.Text = "\"супермегакнопка\" поглинає \"Hello World\"";
+            this.MessageCheckBox.UseVisualStyleBackColor = true;
+            this.MessageCheckBox.CheckedChanged += new System.EventHandler(this.MessageCheckBox_CheckedChanged);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.MessageCheckBox);
+            this.Controls.Add(this.ColorBackgroundCheckBox);
+            this.Controls.Add(this.OpacityCheckBox);
             this.Controls.Add(this.btnSetOfActions);
             this.Controls.Add(this.MessageBtn);
             this.Controls.Add(this.ColorBackgroundBtn);
@@ -86,6 +125,7 @@
             this.Name = "Form1";
             this.Text = "Form1";
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -95,6 +135,9 @@
         private System.Windows.Forms.Button ColorBackgroundBtn;
         private System.Windows.Forms.Button MessageBtn;
         private System.Windows.Forms.Button btnSetOfActions;
+        private System.Windows.Forms.CheckBox OpacityCheckBox;
+        private System.Windows.Forms.CheckBox ColorBackgroundCheckBox;
+        private System.Windows.Forms.CheckBox MessageCheckBox;
     }
 }
 
