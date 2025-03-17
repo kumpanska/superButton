@@ -39,12 +39,12 @@ namespace task5
         private void MessageBtn_Click(object sender, EventArgs e)
         {
             MessageBox.Show("Hello World!");
-            action?.Invoke(sender, e);
         }
 
         private void btnSetOfActions_Click(object sender, EventArgs e)
         {
             MessageBox.Show("Я супермегакнопка,\nі цього мене не позбавиш!");
+            action?.Invoke(sender, e);
         }
 
         private void OpacityCheckBox_CheckedChanged(object sender, EventArgs e)
